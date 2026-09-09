@@ -1,0 +1,4 @@
+-r base.txt
+torch>=2.2.0
+torchvision>=0.17.0
+timm>=0.9.16

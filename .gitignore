@@ -1,0 +1,48 @@
+# Frontend & Dependencies (Prevents esbuild locking issues)
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+dist/
+build/
+.next/
+
+# Python Environment
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Massive Datasets & Raw Satellite Data (Do not upload)
+data/gpm_imerg/
+data/training_tensors/
+data/wind_cache/
+data/ibtracs*.csv
+data/subset_GPM*.txt
+*.nc
+*.h5
+*.hdf5
+*.pkl
+*.npz
+*.npy
+*.parquet
+*.zip
+*.tar.gz
+*.mp4
+
+# Environment & Secrets
+.env
+.env.local
+*.env
+
+# System & Editor Junk
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Documentation / Markdown (keeps README.md safe)
+*.md
+!README.md
+
+data/IN.txt
