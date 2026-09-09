@@ -41,8 +41,6 @@ data/subset_GPM*.txt
 Thumbs.db
 .DS_Store
 
-# Documentation / Markdown (keeps README.md safe)
-*.md
-!README.md
+
 
 data/IN.txt
