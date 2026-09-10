@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="India Cyclone Monitoring — Live storm tracking, rainfall forecasts, and shelter locator for Bay of Bengal and Arabian Sea." />
+  <title>Cyclone Watch — India Storm Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0e1a;
+      --panel: rgba(13, 18, 36, 0.92);
+      --border: rgba(99, 179, 237, 0.15);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.4);
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --success: #10b981;
+      --text-primary: #f0f6ff;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      overflow: hidden;
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    #sidebar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 340px;
+      z-index: 1000;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #sidebar-header {
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(99,102,241,0.06));
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    .logo h1 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text-primary);
+    }
+
+    .logo p {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    #refresh-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    #refresh-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--success);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    #sidebar-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .storm-card {
+      background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(99,102,241,0.08));
+      border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+
+    .storm-card .cat-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .storm-card .storm-name {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .stat-item {
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .stat-label {
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+
+    .stat-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+    }
+
+    .stat-unit {
+      font-size: 10px;
+      color: var(--text-secondary);
+      font-weight: 400;
+      margin-left: 2px;
+    }
+
+    .confidence-bar {
+      margin-top: 10px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 6px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .confidence-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .confidence-track {
+      flex: 1;
+      height: 4px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .confidence-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      transition: width 0.6s ease;
+    }
+
+    .confidence-value {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+
+    .timeline-section {
+      margin-bottom: 16px;
+    }
+
+    .timeline-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+
+    .timeline-row:hover {
+      background: rgba(59,130,246,0.08);
+    }
+
+    .timeline-row.active {
+      background: rgba(59,130,246,0.15);
+      border-color: rgba(59,130,246,0.4);
+    }
+
+    .timeline-hour {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      width: 36px;
+      flex-shrink: 0;
+    }
+
+    .timeline-cat {
+      flex: 1;
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    .timeline-rain {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .rain-LOW    { background: rgba(16,185,129,0.2); color: #10b981; }
+    .rain-MODERATE { background: rgba(245,158,11,0.2); color: #f59e0b; }
+    .rain-HIGH   { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .rain-SEVERE { background: rgba(139,0,0,0.3); color: #fca5a5; }
+
+    .pincode-section {
+      margin-bottom: 16px;
+    }
+
+    .pincode-input-row {
+      display: flex;
+      gap: 6px;
+    }
+
+    #pincode-input {
+      flex: 1;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 13px;
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #pincode-input::placeholder { color: var(--text-muted); }
+    #pincode-input:focus { border-color: var(--accent); }
+
+    #pincode-btn {
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 9px 14px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.2s;
+    }
+
+    #pincode-btn:hover { opacity: 0.9; }
+
+    #pincode-result {
+      margin-top: 10px;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      display: none;
+    }
+
+    #pincode-result.affected {
+      background: rgba(239,68,68,0.12);
+      border: 1px solid rgba(239,68,68,0.3);
+    }
+
+    #pincode-result.safe {
+      background: rgba(16,185,129,0.1);
+      border: 1px solid rgba(16,185,129,0.25);
+    }
+
+    #pincode-result .result-title {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    #pincode-result .result-detail {
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .layer-toggles {
+      margin-bottom: 16px;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 4px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toggle-row:last-child { border-bottom: none; }
+
+    .toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .toggle-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 36px;
+      height: 20px;
+    }
+
+    .toggle-switch input { display: none; }
+
+    .toggle-slider {
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .toggle-slider::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+      transition: transform 0.2s;
+    }
+
+    .toggle-switch input:checked + .toggle-slider { background: var(--accent); }
+    .toggle-switch input:checked + .toggle-slider::before { transform: translateX(16px); }
+
+    #basin-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+      padding: 4px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+    }
+
+    .basin-tab {
+      flex: 1;
+      text-align: center;
+      padding: 7px 4px;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s;
+      border: none;
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .basin-tab.active {
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      color: #fff;
+    }
+
+    .alert-banner {
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: none;
+    }
+
+    .alert-banner.visible { display: block; }
+
+    .alert-banner.RED    { background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.35); color: #fca5a5; }
+    .alert-banner.ORANGE { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); color: #fde68a; }
+    .alert-banner.YELLOW { background: rgba(234,179,8,0.1); border: 1px solid rgba(234,179,8,0.25); color: #fef08a; }
+    .alert-banner.GREEN  { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2); color: #6ee7b7; }
+
+    .spinner {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(59,130,246,0.3);
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    #loading-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2000;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      transition: opacity 0.5s;
+    }
+
+    #loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .load-logo {
+      font-size: 48px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .load-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 640px) {
+      #sidebar {
+        width: 100%;
+        top: auto;
+        height: 50vh;
+        border-right: none;
+        border-top: 1px solid var(--border);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div id="loading-overlay">
+  <div class="load-logo">🌀</div>
+  <div class="spinner"></div>
+  <div class="load-text">Loading storm data…</div>
+</div>
+
+<div id="map"></div>
+
+<div id="sidebar">
+  <div id="sidebar-header">
+    <div class="logo">
+      <div class="logo-icon">🌀</div>
+      <div>
+        <h1>Cyclone Watch</h1>
+        <p>India Storm Monitor — BOB / AS</p>
+      </div>
+    </div>
+    <div id="refresh-bar">
+      <div id="refresh-dot"></div>
+      <span id="refresh-label">Loading…</span>
+    </div>
+  </div>
+
+  <div id="sidebar-body">
+
+    <div id="basin-tabs">
+      <button class="basin-tab active" id="tab-BOB" onclick="switchBasin('BOB')">Bay of Bengal</button>
+      <button class="basin-tab" id="tab-AS" onclick="switchBasin('AS')">Arabian Sea</button>
+    </div>
+
+    <div id="storm-alert" class="alert-banner GREEN visible">Loading storm data…</div>
+
+    <div class="section-label">Current Storm</div>
+    <div class="storm-card" id="storm-card">
+      <span class="cat-badge" id="storm-badge">—</span>
+      <div class="storm-name" id="storm-name">—</div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <div class="stat-label">Wind (3-min)</div>
+          <div class="stat-value" id="stat-msw">—<span class="stat-unit">kt</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Pressure</div>
+          <div class="stat-value" id="stat-pres">—<span class="stat-unit">hPa</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Latitude</div>
+          <div class="stat-value" id="stat-lat">—<span class="stat-unit">°N</span></div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Longitude</div>
+          <div class="stat-value" id="stat-lon">—<span class="stat-unit">°E</span></div>
+        </div>
+      </div>
+      <div class="confidence-bar">
+        <span class="confidence-label">Eye</span>
+        <div class="confidence-track">
+          <div class="confidence-fill" id="conf-fill" style="width:0%"></div>
+        </div>
+        <span class="confidence-value" id="conf-label">—</span>
+      </div>
+    </div>
+
+    <div class="section-label">Forecast Timeline</div>
+    <div class="timeline-section" id="timeline-section"></div>
+
+    <div class="section-label">Check Your Location</div>
+    <div class="pincode-section">
+      <div class="pincode-input-row">
+        <input type="text" id="pincode-input" placeholder="Enter pincode (e.g. 530001)" maxlength="6" />
+        <button id="pincode-btn" onclick="checkPincode()">Check</button>
+      </div>
+      <div id="pincode-result"></div>
+    </div>
+
+    <div class="section-label">Map Layers</div>
+    <div class="layer-toggles">
+      <div class="toggle-row">
+        <span class="toggle-label">
+          <span class="toggle-dot" style="background:#ef4444"></span>Storm Track
+        </span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="tog-track" checked onchange="toggleLayer('track', this.checked)" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-label">
+          <span class="toggle-dot" style="background:rgba(245,158,11,0.7)"></span>Uncertainty Cone
+        </span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="tog-cone" checked onchange="toggleLayer('cone', this.checked)" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-label">
+          <span class="toggle-dot" style="background:#3b82f6"></span>Rainfall Heatmap
+        </span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="tog-rain" checked onchange="toggleLayer('rain', this.checked)" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-label">
+          <span class="toggle-dot" style="background:#10b981"></span>Cyclone Shelters
+        </span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="tog-shelter" checked onchange="toggleLayer('shelter', this.checked)" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const REFRESH_MS = 15 * 60 * 1000;
+const BASIN_API = basin => `/api/predictions/tracks/live/?basin=${basin}`;
+const SHELTER_API = '/api/cyclones/shelters/?limit=200';
+const AFFECTED_API = (pincode, basin) => `/api/predictions/affected-area/?pincode=${pincode}`;
+
+let map, stormMarker, trackLine, conePolygon, heatLayer, shelterGroup;
+let currentBasin = 'BOB';
+let stormData = null;
+let pincodeMarker = null;
+
+const IMD_COLOURS = {
+  'Depression': '#fbbf24',
+  'Deep Depression': '#f59e0b',
+  'Cyclonic Storm': '#fb923c',
+  'Severe Cyclonic Storm': '#f97316',
+  'Very Severe Cyclonic Storm': '#ef4444',
+  'Extremely Severe Cyclonic Storm': '#dc2626',
+  'Super Cyclonic Storm': '#7f1d1d',
+};
+
+function trackColour(category) {
+  return IMD_COLOURS[category] || '#60a5fa';
+}
+
+function coneRadius(eyeConf, horizonH) {
+  const base = 50 + (1.0 - eyeConf) * 150;
+  const growth = (horizonH / 12.0) * 30;
+  return base + growth;
+}
+
+function kmToLatDeg(km) { return km / 111.0; }
+function kmToLonDeg(km, lat) { return km / (111.0 * Math.cos(lat * Math.PI / 180)); }
+
+function buildConePoints(timeline, eyeConf) {
+  const left = [], right = [];
+  timeline.forEach(step => {
+    const r = coneRadius(eyeConf, step.forecast_hour);
+    const dlat = kmToLatDeg(r);
+    const dlon = kmToLonDeg(r, step.lat);
+    left.push([step.lat + dlat, step.lon - dlon]);
+    right.unshift([step.lat - dlat, step.lon + dlon]);
+  });
+  return [...left, ...right];
+}
+
+function initMap() {
+  map = L.map('map', { zoomControl: false }).setView([14.5, 83.0], 6);
+
+  const osmLayer = L.tileLayer(
+    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    { attribution: '© OpenStreetMap © CARTO', maxZoom: 18 }
+  );
+
+  const satLayer = L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    { attribution: '© Esri', maxZoom: 17 }
+  );
+
+  osmLayer.addTo(map);
+
+  L.control.layers({ 'Dark Map': osmLayer, 'Satellite': satLayer }, {}, { position: 'topright' }).addTo(map);
+  L.control.zoom({ position: 'topright' }).addTo(map);
+
+  shelterGroup = L.layerGroup().addTo(map);
+  loadShelters();
+}
+
+function createPulsingIcon(colour) {
+  return L.divIcon({
+    className: '',
+    html: `<div style="
+      position:relative;width:20px;height:20px;
+    ">
+      <div style="
+        position:absolute;inset:0;border-radius:50%;
+        background:${colour};opacity:0.3;
+        animation:ping 1.5s ease-out infinite;
+      "></div>
+      <div style="
+        position:absolute;inset:4px;border-radius:50%;
+        background:${colour};border:2px solid #fff;
+      "></div>
+    </div>
+    <style>@keyframes ping{0%{transform:scale(1);opacity:0.3}100%{transform:scale(2.5);opacity:0}}</style>`,
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+  });
+}
+
+function updateMap(data) {
+  stormData = data;
+  const lat = data.center_lat;
+  const lon = data.center_lon;
+  const colour = trackColour(data.imd_category);
+
+  if (stormMarker) map.removeLayer(stormMarker);
+  stormMarker = L.marker([lat, lon], { icon: createPulsingIcon(colour), zIndexOffset: 1000 })
+    .addTo(map)
+    .bindPopup(buildPopupHTML(data));
+
+  const timelinePoints = [[lat, lon], ...(data.forecast_timeline || []).map(s => [s.lat, s.lon])];
+
+  if (trackLine) map.removeLayer(trackLine);
+  trackLine = L.polyline(timelinePoints, {
+    color: colour, weight: 3, dashArray: '6 4', opacity: 0.9,
+  }).addTo(map);
+
+  if (conePolygon) map.removeLayer(conePolygon);
+  if (data.forecast_timeline && data.forecast_timeline.length) {
+    const conePoints = buildConePoints(data.forecast_timeline, data.eye_confidence);
+    conePolygon = L.polygon(conePoints, {
+      color: 'rgba(245,158,11,0.6)', fillColor: 'rgba(245,158,11,0.08)', weight: 1.5,
+    }).addTo(map);
+  }
+
+  if (heatLayer) map.removeLayer(heatLayer);
+  const heatPoints = [];
+  (data.forecast_timeline || []).forEach(step => {
+    (step.rainfall_grid || []).forEach(cell => {
+      const intensity = Math.min(cell.rainfall_mm / 130.0, 1.0);
+      if (intensity > 0.02) heatPoints.push([cell.lat, cell.lon, intensity]);
+    });
+  });
+  if (heatPoints.length) {
+    heatLayer = L.heatLayer(heatPoints, {
+      radius: 18, blur: 20, maxZoom: 10,
+      gradient: { 0.0: '#1e40af', 0.3: '#3b82f6', 0.55: '#f59e0b', 0.8: '#ef4444', 1.0: '#7f1d1d' },
+    }).addTo(map);
+  }
+
+  const forecastTrackDots = (data.forecast_timeline || []).map(step => {
+    const c = trackColour(step.imd_category);
+    return L.circleMarker([step.lat, step.lon], {
+      radius: 5, color: c, fillColor: c, fillOpacity: 0.9, weight: 2,
+    }).bindTooltip(`T+${step.forecast_hour}h: ${step.imd_category} (${step.msw_kt} kt)`, { direction: 'top' });
+  });
+  forecastTrackDots.forEach(d => d.addTo(map));
+
+  updateSidebar(data);
+}
+
+function buildPopupHTML(data) {
+  return `
+    <div style="font-family:Inter,sans-serif;min-width:200px;padding:4px">
+      <div style="font-weight:700;font-size:14px;margin-bottom:8px">${data.imd_category}</div>
+      <table style="font-size:12px;width:100%;border-collapse:collapse">
+        <tr><td style="color:#666;padding:2px 0">Wind (3-min)</td><td style="font-weight:600">${data.msw_3min} kt</td></tr>
+        <tr><td style="color:#666;padding:2px 0">Pressure</td><td style="font-weight:600">${data.central_pressure_hpa} hPa</td></tr>
+        <tr><td style="color:#666;padding:2px 0">Eye</td><td style="font-weight:600">${data.eye_confidence_label}</td></tr>
+        <tr><td style="color:#666;padding:2px 0">Basin</td><td style="font-weight:600">${data.basin}</td></tr>
+        <tr><td style="color:#666;padding:2px 0">Source</td><td style="font-weight:600">${data.satellite_source}</td></tr>
+      </table>
+    </div>
+  `;
+}
+
+function updateSidebar(data) {
+  document.getElementById('storm-badge').textContent = data.imd_category;
+  document.getElementById('storm-name').textContent = data.basin === 'BOB' ? 'Bay of Bengal' : 'Arabian Sea';
+  document.getElementById('stat-msw').innerHTML = `${data.msw_3min}<span class="stat-unit">kt</span>`;
+  document.getElementById('stat-pres').innerHTML = `${data.central_pressure_hpa}<span class="stat-unit">hPa</span>`;
+  document.getElementById('stat-lat').innerHTML = `${data.center_lat}<span class="stat-unit">°N</span>`;
+  document.getElementById('stat-lon').innerHTML = `${data.center_lon}<span class="stat-unit">°E</span>`;
+
+  const confPct = Math.round(data.eye_confidence * 100);
+  document.getElementById('conf-fill').style.width = confPct + '%';
+  document.getElementById('conf-label').textContent = data.eye_confidence_label;
+
+  const alert = document.getElementById('storm-alert');
+  const colour = data.alert_colour || 'GREEN';
+  alert.className = `alert-banner ${colour} visible`;
+  alert.textContent = `⚠️ ${data.imd_category} in ${data.basin === 'BOB' ? 'Bay of Bengal' : 'Arabian Sea'} — ${data.msw_3min} kt winds`;
+
+  const tl = document.getElementById('timeline-section');
+  tl.innerHTML = '';
+  (data.forecast_timeline || []).forEach((step, i) => {
+    const riskClass = `rain-${step.imd_category.includes('Super') ? 'SEVERE' : step.max_rainfall_mm > 130 ? 'SEVERE' : step.max_rainfall_mm > 65 ? 'HIGH' : step.max_rainfall_mm > 15 ? 'MODERATE' : 'LOW'}`;
+    const row = document.createElement('div');
+    row.className = 'timeline-row' + (i === 0 ? ' active' : '');
+    row.setAttribute('data-step', i);
+    row.innerHTML = `
+      <span class="timeline-hour">T+${step.forecast_hour}h</span>
+      <span class="timeline-cat">${step.imd_category}</span>
+      <span class="timeline-rain ${riskClass}">${step.max_rainfall_mm} mm</span>
+    `;
+    row.onclick = () => {
+      document.querySelectorAll('.timeline-row').forEach(r => r.classList.remove('active'));
+      row.classList.add('active');
+      map.setView([step.lat, step.lon], map.getZoom(), { animate: true });
+    };
+    tl.appendChild(row);
+  });
+
+  document.getElementById('refresh-label').textContent =
+    'Updated ' + new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
+}
+
+async function loadShelters() {
+  try {
+    const res = await fetch(SHELTER_API);
+    const data = await res.json();
+    shelterGroup.clearLayers();
+    (data.features || []).forEach(f => {
+      const [lon, lat] = f.geometry.coordinates;
+      const props = f.properties;
+      const icon = L.divIcon({
+        className: '',
+        html: `<div style="width:12px;height:12px;background:#10b981;border-radius:2px;border:2px solid #fff;box-shadow:0 0 6px rgba(16,185,129,0.6)"></div>`,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+      });
+      L.marker([lat, lon], { icon })
+        .bindPopup(`<b>${props.name}</b><br>${props.district}, ${props.state}<br>Capacity: ${props.capacity}`)
+        .addTo(shelterGroup);
+    });
+  } catch (_) {}
+}
+
+function toggleLayer(which, on) {
+  if (which === 'track') {
+    if (trackLine) { on ? map.addLayer(trackLine) : map.removeLayer(trackLine); }
+  } else if (which === 'cone') {
+    if (conePolygon) { on ? map.addLayer(conePolygon) : map.removeLayer(conePolygon); }
+  } else if (which === 'rain') {
+    if (heatLayer) { on ? map.addLayer(heatLayer) : map.removeLayer(heatLayer); }
+  } else if (which === 'shelter') {
+    on ? map.addLayer(shelterGroup) : map.removeLayer(shelterGroup);
+  }
+}
+
+async function checkPincode() {
+  const val = document.getElementById('pincode-input').value.trim();
+  if (!val || val.length !== 6) {
+    showPincodeResult(false, 'Enter a valid 6-digit pincode.', null);
+    return;
+  }
+  document.getElementById('pincode-btn').innerHTML = '<span class="spinner"></span>';
+  try {
+    const res = await fetch(AFFECTED_API(val, currentBasin));
+    if (!res.ok) {
+      const err = await res.json();
+      showPincodeResult(false, err.error || 'Error checking pincode.', null);
+      return;
+    }
+    const data = await res.json();
+    if (pincodeMarker) map.removeLayer(pincodeMarker);
+    pincodeMarker = L.circleMarker([data.location.lat, data.location.lon], {
+      radius: 10, color: data.is_affected ? '#ef4444' : '#10b981',
+      fillColor: data.is_affected ? '#ef4444' : '#10b981', fillOpacity: 0.4, weight: 2,
+    }).addTo(map).bindPopup(`<b>${val}</b><br>${data.advisory}`).openPopup();
+    map.flyTo([data.location.lat, data.location.lon], 9, { duration: 1.2 });
+    showPincodeResult(data.is_affected, data.advisory, data);
+  } catch (_) {
+    showPincodeResult(false, 'Could not reach the server.', null);
+  } finally {
+    document.getElementById('pincode-btn').textContent = 'Check';
+  }
+}
+
+function showPincodeResult(affected, message, data) {
+  const el = document.getElementById('pincode-result');
+  el.style.display = 'block';
+  el.className = 'pincode-result ' + (affected ? 'affected' : 'safe');
+  let html = `<div class="result-title">${affected ? '⚠️ In Affected Zone' : '✅ Outside Affected Zone'}</div>`;
+  html += `<div class="result-detail">${message}</div>`;
+  if (data) {
+    html += `<div class="result-detail" style="margin-top:6px">
+      Distance: ${data.distance_km} km &nbsp;|&nbsp; Rain: ${data.expected_rainfall_mm} mm
+    </div>`;
+    if (data.nearest_shelter) {
+      html += `<div class="result-detail" style="margin-top:4px">
+        Nearest shelter: <strong>${data.nearest_shelter.name}</strong> (${data.nearest_shelter.distance_km} km)
+      </div>`;
+    }
+    if (data.shelter_data_note) {
+      html += `<div class="result-detail" style="margin-top:4px;color:#f59e0b">${data.shelter_data_note}</div>`;
+    }
+  }
+  el.innerHTML = html;
+}
+
+function switchBasin(basin) {
+  currentBasin = basin;
+  document.querySelectorAll('.basin-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + basin).classList.add('active');
+  fetchAndUpdate();
+}
+
+async function fetchAndUpdate() {
+  try {
+    const res = await fetch(BASIN_API(currentBasin));
+    const data = await res.json();
+    updateMap(data);
+    document.getElementById('loading-overlay').classList.add('hidden');
+  } catch (_) {
+    document.getElementById('refresh-label').textContent = 'Update failed — retrying…';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initMap();
+  fetchAndUpdate();
+  setInterval(fetchAndUpdate, REFRESH_MS);
+  document.getElementById('pincode-input').addEventListener('keypress', e => {
+    if (e.key === 'Enter') checkPincode();
+  });
+});
+</script>
+</body>
+</html>

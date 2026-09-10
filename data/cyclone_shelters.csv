@@ -1,0 +1,757 @@
+name,state,district,lat,lon,capacity,shelter_type,data_source
+Shelter Primary School,Andaman & Nicobar Islands,South Andaman,11.7167,92.6167,87,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.4386,83.8455,95,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.5809,83.7944,177,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.9442,84.5845,267,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.2668,83.7351,324,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.3099,83.7606,179,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Srikakulam,18.6393,83.6792,754,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Vizianagaram,17.9999,83.2015,54,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Vizianagaram,19.0509,83.6593,272,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.8909,82.6924,920,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.858,83.0356,512,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.7521,82.7992,829,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.5859,82.445,887,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.5292,82.3889,427,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.3327,82.6411,695,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Visakhapatnam,17.8909,82.6924,696,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,East Godavari,17.4131,82.239,811,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,East Godavari,17.096,81.8809,875,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,East Godavari,17.359,82.5461,173,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,East Godavari,17.1885,82.0118,750,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,West Godavari,16.7514,81.74,677,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Krishna,16.3278,80.9804,671,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Guntur,16.2988,80.0915,375,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Guntur,16.2988,80.0915,425,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Guntur,16.2988,80.0915,315,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Guntur,16.4373,80.5787,206,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Prakasam,15.6107,79.5882,540,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Prakasam,15.0879,79.9401,94,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Prakasam,15.8056,79.2391,512,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Prakasam,15.4572,79.0384,172,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Prakasam,15.2231,79.0655,192,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,14.4784,80.0347,212,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,13.9414,80.0211,263,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,14.5423,79.8845,145,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,14.4268,79.7344,608,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,14.8411,80.046,793,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Nellore,14.4772,79.7644,327,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.0211,79.2472,58,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.4274,79.0196,269,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.0918,78.7409,733,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.8466,78.6783,927,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.4374,78.298,831,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Cuddapah,14.9449,78.3114,450,School,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Kurnool,15.284,77.9001,698,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Ananthapur,14.8527,77.1836,209,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Chittoor,13.7221,78.9943,106,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Chittoor,13.4673,79.0143,308,Community Hall,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Chittoor,13.4673,79.0143,103,Government Building,Synthetic Generation
+Shelter Primary School,Andhra Pradesh,Chittoor,13.6946,79.5937,790,Community Hall,Synthetic Generation
+Shelter Primary School,Assam,Dhubri,25.9054,90.0181,548,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Dhubri,26.271,89.7904,989,Government Building,Synthetic Generation
+Shelter Primary School,Assam,Barpeta,26.3402,91.0108,172,Community Hall,Synthetic Generation
+Shelter Primary School,Assam,Marigaon,26.2848,92.282,395,School,Synthetic Generation
+Shelter Primary School,Assam,Nagaon,26.223,92.8425,312,Community Hall,Synthetic Generation
+Shelter Primary School,Assam,Lakhimpur,27.169,94.1258,373,Government Building,Synthetic Generation
+Shelter Primary School,Assam,Tinsukia,27.5688,95.5566,546,Government Building,Synthetic Generation
+Shelter Primary School,Assam,Dibrugarh,27.3664,95.0562,99,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Sibsagar,26.9122,94.6695,81,School,Synthetic Generation
+Shelter Primary School,Assam,Jorhat,26.794,94.2565,378,Community Hall,Synthetic Generation
+Shelter Primary School,Assam,Golaghat,26.5969,94.4868,710,School,Synthetic Generation
+Shelter Primary School,Assam,Karbi Anglong,26.0654,93.1487,487,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Karbi Anglong,26.0654,93.1487,636,School,Synthetic Generation
+Shelter Primary School,Assam,Bongaigaon,26.4638,90.5639,688,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Bongaigaon,26.3652,90.6248,612,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Kamrup,26.1954,91.6023,862,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Assam,Darrang,26.4493,92.0374,156,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Delhi,North Delhi,28.7106,77.2115,423,School,Synthetic Generation
+Shelter Primary School,Delhi,East Delhi,28.6114,77.2982,300,Community Hall,Synthetic Generation
+Shelter Primary School,Delhi,West Delhi,28.6396,77.0884,374,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Delhi,West Delhi,28.6396,77.0884,480,Government Building,Synthetic Generation
+Shelter Primary School,Delhi,South West Delhi,28.565,77.1972,263,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Kachchh,23.6366,69.813,119,School,Synthetic Generation
+Shelter Primary School,Gujarat,Kachchh,23.1943,69.0819,462,School,Synthetic Generation
+Shelter Primary School,Gujarat,Banaskantha,23.8875,71.7698,720,School,Synthetic Generation
+Shelter Primary School,Gujarat,Patan,23.5298,71.8274,250,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Patan,23.7645,71.1681,95,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Sabarkantha,23.5905,72.8344,870,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Sabarkantha,23.8073,73.0353,684,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Sabarkantha,23.8073,73.0353,968,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Sabarkantha,23.8073,73.0353,101,School,Synthetic Generation
+Shelter Primary School,Gujarat,Sabarkantha,23.8073,73.0353,167,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Gandhi Nagar,23.2529,72.6986,957,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Ahmedabad,22.7611,72.2477,360,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Rajkot,22.02,70.7455,923,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Porbandar,21.6084,69.7871,355,School,Synthetic Generation
+Shelter Primary School,Gujarat,Junagadh,21.3729,70.4136,451,School,Synthetic Generation
+Shelter Primary School,Gujarat,Amreli,21.4216,71.2534,279,School,Synthetic Generation
+Shelter Primary School,Gujarat,Amreli,21.4216,71.2534,632,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Amreli,21.4216,71.2534,423,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Amreli,21.3574,70.9044,401,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Bhavnagar,21.5717,71.9007,412,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Anand,21.7093,73.3353,624,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Kheda,22.9857,73.0017,902,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Kheda,23.0995,73.163,642,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Kheda,22.9465,73.2224,197,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Panch Mahals,22.7204,73.6293,840,School,Synthetic Generation
+Shelter Primary School,Gujarat,Panch Mahals,22.7204,73.6293,227,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Panch Mahals,22.7204,73.6293,938,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Panch Mahals,22.7204,73.6293,381,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Panch Mahals,22.4232,73.6086,952,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Vadodara,22.2454,73.2327,684,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Vadodara,22.2454,73.2327,112,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Vadodara,22.2454,73.2327,928,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Vadodara,22.2454,73.2327,827,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Vadodara,22.2454,73.2327,973,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Bharuch,21.7793,72.9224,440,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Navsari,20.8134,73.0929,584,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Navsari,20.9904,72.8927,945,School,Synthetic Generation
+Shelter Primary School,Gujarat,Navsari,20.8134,73.0929,180,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Valsad,20.3311,73.1888,139,Community Hall,Synthetic Generation
+Shelter Primary School,Gujarat,Surat,21.2623,73.0694,604,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Surat,21.2623,73.0694,521,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Dahod,22.6843,74.312,82,Government Building,Synthetic Generation
+Shelter Primary School,Gujarat,Dahod,23.0014,74.1062,176,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Gujarat,Dahod,22.5998,73.801,261,School,Synthetic Generation
+Shelter Primary School,Haryana,Yamuna Nagar,30.2539,77.199,922,School,Synthetic Generation
+Shelter Primary School,Haryana,Panipat,29.2463,76.8957,895,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Haryana,Fatehabad,29.4155,75.5503,341,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Haryana,Fatehabad,29.6583,75.8678,152,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Haryana,Bhiwani,28.6312,75.9432,403,Government Building,Synthetic Generation
+Shelter Primary School,Haryana,Rohtak,29.0149,76.6758,269,Government Building,Synthetic Generation
+Shelter Primary School,Haryana,Jhajjar,28.7554,76.904,487,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Haryana,Rewari,28.1963,76.3974,554,School,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Chamba,32.461,76.4737,555,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Chamba,32.844,76.0347,615,Government Building,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kangra,32.177,75.9505,136,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kangra,32.0305,76.1354,342,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kangra,31.8287,76.3485,277,Community Hall,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kangra,31.958,76.3144,613,Government Building,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Lahul & Spiti,32.1586,78.1313,677,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Mandi,31.4489,77.0434,996,Community Hall,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Una,31.5807,76.2101,842,Government Building,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Sirmaur,30.7139,77.2956,139,Government Building,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Shimla,31.2984,77.4277,183,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kinnaur,31.5968,78.4126,689,School,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Kinnaur,31.5108,78.2654,565,Government Building,Synthetic Generation
+Shelter Primary School,Himachal Pradesh,Bilaspur (HP),31.4957,76.7008,948,School,Synthetic Generation
+Shelter Primary School,Jammu & Kashmir,Poonch,33.5874,74.2565,608,School,Synthetic Generation
+Shelter Primary School,Jammu & Kashmir,Srinagar,34.1621,74.8647,405,Community Hall,Synthetic Generation
+Shelter Primary School,Jammu & Kashmir,Ananthnag,33.8152,75.3575,383,Government Building,Synthetic Generation
+Shelter Primary School,Jammu & Kashmir,Doda,33.1008,75.6497,892,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Jammu & Kashmir,Udhampur,32.6976,75.4132,807,School,Synthetic Generation
+Shelter Primary School,Kerala,Kannur,12.0418,75.3473,86,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Kannur,11.8547,75.483,511,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Kannur,11.8547,75.483,157,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Kannur,12.037,75.6696,714,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Wayanad,11.7112,76.0981,300,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Kozhikode,11.2855,75.7837,294,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Kozhikode,11.6103,75.7806,624,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Kozhikode,11.5,75.9667,308,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Kozhikode,11.4878,75.7743,744,School,Synthetic Generation
+Shelter Primary School,Kerala,Malappuram,11.1357,76.0365,209,School,Synthetic Generation
+Shelter Primary School,Kerala,Malappuram,11.1274,76.1064,254,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Malappuram,11.2153,76.1418,356,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Palakkad,10.7691,76.6533,427,School,Synthetic Generation
+Shelter Primary School,Kerala,Thrissur,10.6554,76.1174,630,School,Synthetic Generation
+Shelter Primary School,Kerala,Thrissur,10.6832,76.334,264,School,Synthetic Generation
+Shelter Primary School,Kerala,Thrissur,10.2326,76.1951,253,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Thrissur,10.3671,76.3232,889,School,Synthetic Generation
+Shelter Primary School,Kerala,Ernakulam,10.0975,76.3717,160,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Ernakulam,9.8694,76.5753,691,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Idukki,9.9029,76.7696,154,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Kottayam,9.5416,76.6986,96,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Kottayam,9.5135,76.5697,577,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Kottayam,9.633,76.679,749,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Kottayam,9.669,76.5592,116,School,Synthetic Generation
+Shelter Primary School,Kerala,Alappuzha,9.4236,76.4496,126,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.2841,76.929,276,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.4,76.6667,83,School,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.4,76.6667,743,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.2422,76.7424,500,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.2422,76.7424,702,Community Hall,Synthetic Generation
+Shelter Primary School,Kerala,Pathanamthitta,9.265,76.7873,782,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Thiruvananthapuram,8.4954,76.9305,580,Government Building,Synthetic Generation
+Shelter Primary School,Kerala,Thiruvananthapuram,8.5988,76.8788,825,School,Synthetic Generation
+Shelter Primary School,Kerala,Thiruvananthapuram,8.5509,76.9357,82,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Kerala,Thiruvananthapuram,8.7124,76.7431,311,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Nandurbar,21.7049,74.489,691,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Dhule,20.9493,74.4169,639,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Dhule,21.1311,74.3126,342,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Jalgaon,20.617,75.8235,651,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Buldhana,19.9398,76.3869,306,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Akola,20.8504,77.1918,622,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Akola,20.7886,77.5879,724,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Akola,20.7494,77.054,353,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Washim,20.1687,77.3536,502,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Amravati,20.9053,77.6053,586,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Amravati,21.3403,78.0651,695,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Wardha,20.7664,78.7001,367,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Nagpur,21.2324,78.6272,153,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Nagpur,21.3851,78.9216,394,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Nagpur,21.5683,79.2934,836,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Gondia,21.5629,80.1677,524,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Gondia,21.3541,79.9219,573,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Chandrapur,20.274,78.952,225,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Yavatmal,20.0845,78.1628,183,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Yavatmal,20.1455,78.2393,657,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Hingoli,19.9244,77.1744,231,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Parbhani,19.1553,76.7616,868,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Jalna,19.4886,75.9917,641,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Aurangabad,20.5055,75.761,605,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Nashik,20.2597,74.0726,945,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Nashik,20.2597,74.0726,695,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Nashik,20.0386,74.1157,463,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Nashik,20.2732,74.1644,159,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Thane,19.36,73.3279,828,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Mumbai,19.0073,72.8421,299,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Mumbai,18.9808,72.8338,185,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Pune,18.6886,73.6256,490,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Pune,18.5716,74.07,641,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Pune,18.5732,73.8739,700,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Pune,18.5716,74.07,708,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Pune,18.7055,74.336,440,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,19.2042,74.6779,506,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,18.717,74.7429,445,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,19.0469,74.6015,913,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,19.2042,74.6779,201,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,19.4851,74.9684,544,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Ahmed Nagar,18.7471,74.638,131,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Osmanabad,18.1896,76.0397,925,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Osmanabad,17.916,76.2635,474,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Osmanabad,18.1896,76.0397,333,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Solapur,17.792,75.4847,380,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Solapur,17.8439,75.4103,109,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Satara,17.6661,74.1735,624,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Ratnagiri,17.2734,73.4573,476,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Ratnagiri,17.4898,73.5155,548,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Ratnagiri,17.8,73.5947,894,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Sindhudurg,16.1323,73.7383,218,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Sindhudurg,16.1323,73.7383,750,Government Building,Synthetic Generation
+Shelter Primary School,Maharashtra,Kolhapur,16.4704,74.1612,744,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Kolhapur,16.4704,74.1612,777,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Sangli,17.1109,74.7832,936,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Sangli,17.1109,74.7832,766,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Sangli,17.0831,75.2495,767,Community Hall,Synthetic Generation
+Shelter Primary School,Maharashtra,Sangli,17.0232,74.6984,862,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Maharashtra,Raigarh(MH),18.8156,73.8298,205,School,Synthetic Generation
+Shelter Primary School,Maharashtra,Raigarh(MH),18.3484,73.1603,762,Government Building,Synthetic Generation
+Shelter Primary School,Manipur,Churachandpur,24.2271,93.2055,186,Government Building,Synthetic Generation
+Shelter Primary School,Manipur,Imphal West,24.6816,93.1544,188,School,Synthetic Generation
+Shelter Primary School,Meghalaya,East Garo Hills,25.7027,90.8233,108,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Belagavi,16.1195,74.823,355,Government Building,Synthetic Generation
+Shelter Primary School,Karnataka,Bagalkot,15.8562,75.7708,869,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Bagalkot,16.0676,76.293,825,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Vijayapura,16.6854,76.0927,457,School,Synthetic Generation
+Shelter Primary School,Karnataka,Bidar,17.9528,77.2265,783,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Bidar,18.0832,77.2406,338,School,Synthetic Generation
+Shelter Primary School,Karnataka,Koppal,15.9116,76.0133,587,School,Synthetic Generation
+Shelter Primary School,Karnataka,Dharwad,15.318,75.1763,585,School,Synthetic Generation
+Shelter Primary School,Karnataka,Dharwad,15.3492,75.0811,221,Government Building,Synthetic Generation
+Shelter Primary School,Karnataka,Dharwad,15.2561,75.2474,92,School,Synthetic Generation
+Shelter Primary School,Karnataka,Uttara Kannada,14.7083,74.2653,897,School,Synthetic Generation
+Shelter Primary School,Karnataka,Uttara Kannada,14.3149,74.4776,708,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Uttara Kannada,14.8601,74.8078,461,Government Building,Synthetic Generation
+Shelter Primary School,Karnataka,Haveri,14.6697,75.1368,399,School,Synthetic Generation
+Shelter Primary School,Karnataka,Ballari,15.1871,77.094,529,School,Synthetic Generation
+Shelter Primary School,Karnataka,Chitradurga,13.8861,76.6989,876,Government Building,Synthetic Generation
+Shelter Primary School,Karnataka,Chitradurga,14.1675,76.5164,518,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Chitradurga,14.1675,76.5164,996,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Shivamogga,13.8127,75.2444,266,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Shivamogga,13.8952,75.3838,833,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Udupi,13.2962,74.7926,604,School,Synthetic Generation
+Shelter Primary School,Karnataka,Udupi,13.6777,74.6978,895,School,Synthetic Generation
+Shelter Primary School,Karnataka,Chikkamagaluru,13.1592,75.4647,772,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Chikkamagaluru,13.4543,75.6913,65,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Tumakuru,13.0058,77.0461,70,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Tumakuru,13.5202,76.9477,120,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Tumakuru,13.6496,77.3079,774,School,Synthetic Generation
+Shelter Primary School,Karnataka,Tumakuru,12.998,76.8971,660,School,Synthetic Generation
+Shelter Primary School,Karnataka,Mandya,12.8065,76.509,130,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Dakshina Kannada,12.9558,74.9175,979,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Dakshina Kannada,12.7931,75.3247,613,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Dakshina Kannada,12.5616,75.4855,545,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Kodagu,12.3244,75.8033,727,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Kodagu,12.6596,75.9136,804,School,Synthetic Generation
+Shelter Primary School,Karnataka,Mysuru,12.3204,76.3134,121,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Chamrajnagar,11.9843,77.0168,250,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Karnataka,Chamrajnagar,11.9569,77.0998,153,School,Synthetic Generation
+Shelter Primary School,Karnataka,Chamrajnagar,12.1108,77.3102,897,School,Synthetic Generation
+Shelter Primary School,Karnataka,Yadgir,16.8905,77.4078,730,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Yadgir,16.7154,76.7979,515,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Bengaluru,13.2257,77.575,208,Community Hall,Synthetic Generation
+Shelter Primary School,Karnataka,Bengaluru,13.2257,77.575,972,School,Synthetic Generation
+Shelter Primary School,Nagaland,Wokha,26.1951,94.2453,550,Government Building,Synthetic Generation
+Shelter Primary School,Nagaland,Peren,25.4996,93.6235,58,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Bargarh,21.3518,83.8094,772,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Bargarh,21.3829,83.8653,286,School,Synthetic Generation
+Shelter Primary School,Odisha,Sundergarh,21.9673,84.6737,358,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Sundergarh,21.9911,83.6556,652,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Sundergarh,21.984,84.0159,532,School,Synthetic Generation
+Shelter Primary School,Odisha,Sundergarh,21.8702,84.9249,678,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.7601,85.4189,746,School,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.7601,85.4189,477,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.6211,85.5215,692,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.5371,85.7051,269,School,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.7537,85.7667,851,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Kendujhar,21.6826,85.6698,136,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Mayurbhanj,21.8952,86.4112,927,School,Synthetic Generation
+Shelter Primary School,Odisha,Mayurbhanj,21.8201,86.4515,222,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Mayurbhanj,21.8952,86.4112,616,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Mayurbhanj,21.8952,86.4112,872,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Mayurbhanj,21.8952,86.4112,493,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Bhadrak,20.9859,86.6254,762,School,Synthetic Generation
+Shelter Primary School,Odisha,Jagatsinghapur,20.2218,86.3437,834,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Cuttack,20.4496,85.7057,906,School,Synthetic Generation
+Shelter Primary School,Odisha,Dhenkanal,20.8262,85.5262,735,School,Synthetic Generation
+Shelter Primary School,Odisha,Dhenkanal,20.8262,85.5262,803,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Khorda,20.09,85.5114,710,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Puri,19.8765,85.7209,121,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Puri,19.8765,85.7209,658,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Ganjam,19.6269,84.6711,412,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Ganjam,19.6738,84.8038,232,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Ganjam,20.1132,84.5672,215,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Ganjam,19.6269,84.6711,137,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Ganjam,20.0969,84.619,719,School,Synthetic Generation
+Shelter Primary School,Odisha,Kandhamal,19.8504,83.7035,976,Community Hall,Synthetic Generation
+Shelter Primary School,Odisha,Kalahandi,19.9237,83.0565,256,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Odisha,Kalahandi,19.5804,82.6231,157,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Koraput,18.8166,82.7213,898,Government Building,Synthetic Generation
+Shelter Primary School,Odisha,Koraput,18.7065,82.3284,249,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Punjab,Gurdaspur,31.6664,75.3283,786,School,Synthetic Generation
+Shelter Primary School,Punjab,Kapurthala,31.3531,75.4034,986,School,Synthetic Generation
+Shelter Primary School,Punjab,Jalandhar,31.2121,75.5684,920,Community Hall,Synthetic Generation
+Shelter Primary School,Punjab,Fatehgarh Sahib,30.7839,76.3898,325,School,Synthetic Generation
+Shelter Primary School,Punjab,Ludhiana,31.0092,75.7534,813,Community Hall,Synthetic Generation
+Shelter Primary School,Punjab,Ludhiana,30.7531,76.0743,695,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Punjab,Ludhiana,30.8047,75.8361,877,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Punjab,Moga,30.8456,75.3307,628,Community Hall,Synthetic Generation
+Shelter Primary School,Punjab,Moga,30.7625,75.1742,451,Community Hall,Synthetic Generation
+Shelter Primary School,Punjab,Firozpur,30.9492,74.7637,510,Government Building,Synthetic Generation
+Shelter Primary School,Punjab,Bathinda,30.1826,75.0416,566,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Punjab,Patiala,30.2803,76.3516,487,Government Building,Synthetic Generation
+Shelter Primary School,Punjab,Amritsar,31.5185,75.3236,612,Community Hall,Synthetic Generation
+Shelter Primary School,Punjab,Amritsar,31.5638,75.1216,318,School,Synthetic Generation
+Shelter Primary School,Punjab,Mohali,30.8071,76.6995,928,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Ganganagar,29.6786,73.7069,355,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Ganganagar,29.1545,73.5956,373,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Hanumangarh,29.1416,75.2011,392,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Hanumangarh,28.9691,74.2362,244,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Bikaner,28.0023,73.3616,981,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Bikaner,28.0404,73.3816,764,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Bikaner,27.8622,73.3056,897,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Churu,28.3455,74.6986,297,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Churu,28.3455,74.6986,409,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Jhujhunu,28.2344,75.4116,982,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Jhujhunu,28.4483,75.7664,282,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Alwar,27.4333,76.9291,872,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Alwar,27.5915,76.606,246,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Alwar,27.7644,76.5215,202,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Bharatpur,27.5849,77.1289,113,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Bharatpur,27.1367,77.4502,556,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Bharatpur,27.2457,77.2788,70,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Dholpur,26.8762,77.8003,62,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Dholpur,26.7199,77.6155,248,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Karauli,26.9851,76.8673,143,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Sawai Madhopur,26.3841,76.2324,836,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Sawai Madhopur,26.438,76.6988,415,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Dausa,26.8561,76.5139,369,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Dausa,26.5619,76.2759,619,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Jaipur,26.8378,75.8256,222,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Jaipur,26.7728,75.7589,529,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Jaipur,27.3956,75.8928,823,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Jaipur,26.9773,75.6235,196,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Jaipur,26.9805,75.7243,978,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Sikar,27.6366,75.2875,267,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Nagaur,27.064,74.1879,50,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Nagaur,27.064,74.1879,462,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Nagaur,27.064,74.1879,163,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Jodhpur,26.905,72.8089,202,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Barmer,25.9741,71.7535,307,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Jalor,25.0978,72.2119,355,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Jalor,24.7536,71.7728,703,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Sirohi,24.571,72.5201,217,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Pali,25.6267,73.8288,524,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Ajmer,26.4475,74.6288,936,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Ajmer,26.3464,74.4188,458,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Chittorgarh,24.8287,74.7797,448,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Chittorgarh,24.8287,74.7797,598,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Kota,25.778,76.5129,888,Government Building,Synthetic Generation
+Shelter Primary School,Rajasthan,Kota,25.1241,76.1293,675,School,Synthetic Generation
+Shelter Primary School,Rajasthan,Baran,24.7348,76.8807,218,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Baran,24.9118,76.546,574,Community Hall,Synthetic Generation
+Shelter Primary School,Rajasthan,Jhalawar,24.4313,76.4904,512,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Rajasthan,Jhalawar,24.3289,76.1968,889,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvallur,13.2431,79.94,169,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Chennai,13.0647,80.2523,353,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Kanchipuram,12.975,80.1347,835,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Kanchipuram,12.551,79.8836,475,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Vellore,13.0315,79.753,156,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Vellore,12.7741,79.4091,133,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvannamalai,12.1302,79.2054,237,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvannamalai,12.7137,79.2258,308,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvannamalai,12.674,79.1057,284,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvannamalai,12.5115,78.841,843,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,12.2105,79.2557,328,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,12.3086,79.611,601,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,11.8584,79.6829,973,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,12.0511,79.0796,811,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,11.691,79.2873,806,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,11.7464,78.9801,825,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,11.7776,79.135,696,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Villupuram,11.9075,79.3473,693,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Salem,11.7527,78.2899,988,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Salem,11.6004,78.7169,108,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Namakkal,11.3969,78.4663,828,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Erode,11.5152,77.4143,304,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Erode,11.6378,77.2926,412,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Erode,11.6378,77.2926,87,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nilgiris,11.4559,76.6419,794,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nilgiris,11.4146,76.8562,111,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nilgiris,11.4236,76.6838,317,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,10.8889,78.5704,202,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,11.0269,78.746,595,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,11.2938,78.4964,240,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,10.9305,78.5251,654,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,11.0732,78.5441,811,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruchirappalli,10.6493,78.3691,913,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Cuddalore,11.4409,78.9791,355,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,10.8432,79.6968,489,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,11.0686,79.6233,939,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,10.6519,79.6929,974,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,10.597,79.8349,863,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,10.8494,79.7389,898,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Nagapattinam,10.4532,79.8299,329,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvarur,10.9236,79.6908,538,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tiruvarur,10.5303,79.7057,236,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Thanjavur,10.8553,79.1064,94,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Thanjavur,10.7423,79.2398,219,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Sivaganga,9.8632,78.2149,236,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Madurai,9.9996,78.1377,187,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Madurai,9.9266,78.0096,72,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Theni,9.8902,77.4394,964,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Theni,10.0424,77.5047,442,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Virudhunagar,9.5287,78.1321,856,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Virudhunagar,9.4337,77.7489,970,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Ramanathapuram,9.4401,78.6733,486,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Ramanathapuram,9.4401,78.6733,646,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tuticorin,8.5876,78.0497,580,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tuticorin,8.4785,78.0465,205,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tirunelveli,8.6969,77.5887,535,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tirunelveli,8.5998,77.7348,679,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tirunelveli,8.7809,77.719,512,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Tirunelveli,8.7469,77.5274,107,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Kanyakumari,8.3632,77.2978,655,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Kanyakumari,8.1794,77.2582,945,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Krishnagiri,12.6265,78.3254,200,School,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Krishnagiri,12.489,78.0327,852,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Krishnagiri,12.2616,78.3755,721,Government Building,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Coimbatore,11.1184,76.969,700,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Coimbatore,10.8745,76.9756,880,Community Hall,Synthetic Generation
+Shelter Primary School,Tamil Nadu,Coimbatore,10.8745,76.9756,988,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Tripura,West Tripura,23.8903,91.4025,450,Government Building,Synthetic Generation
+Shelter Primary School,Tripura,West Tripura,23.8903,91.4025,903,School,Synthetic Generation
+Shelter Primary School,Tripura,Gomti,23.4955,91.3298,401,School,Synthetic Generation
+Shelter Primary School,West Bengal,Darjiling,26.8304,88.2625,580,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Jalpaiguri,26.6605,89.0844,90,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Cooch Behar,26.291,89.3437,357,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Cooch Behar,26.291,89.3437,321,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Cooch Behar,26.2478,89.2194,627,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,North Dinajpur,25.881,88.1583,961,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Malda,25.3249,87.9524,875,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Malda,25.2546,87.9255,329,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Malda,25.1367,88.0923,735,School,Synthetic Generation
+Shelter Primary School,West Bengal,Murshidabad,24.4057,88.0651,107,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Murshidabad,24.7477,87.9359,967,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Birbhum,23.9536,87.6665,673,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Birbhum,24.1395,87.8054,645,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Birbhum,24.3225,87.9064,475,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Birbhum,23.9536,87.6665,592,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Purba Bardhaman,23.3857,88.0371,496,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Nadia,23.4827,88.5215,580,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Nadia,23.4827,88.5215,798,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,North 24 Parganas,22.4656,88.7803,878,School,Synthetic Generation
+Shelter Primary School,West Bengal,North 24 Parganas,22.8433,88.8811,754,School,Synthetic Generation
+Shelter Primary School,West Bengal,Hooghly,22.8847,88.0798,817,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Hooghly,22.8847,88.0798,258,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Hooghly,22.8847,88.0798,495,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Hooghly,22.8283,88.0778,788,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Hooghly,22.8847,88.0798,604,School,Synthetic Generation
+Shelter Primary School,West Bengal,Bankura,23.141,87.135,531,School,Synthetic Generation
+Shelter Primary School,West Bengal,Bankura,23.141,87.135,513,School,Synthetic Generation
+Shelter Primary School,West Bengal,Purulia,23.2774,86.4183,134,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Purulia,23.2774,86.4183,995,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Purulia,23.3861,85.9525,897,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,Howrah,22.526,88.0676,415,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Kolkata,22.5333,88.3917,921,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,South 24 Parganas,22.1168,88.4167,534,School,Synthetic Generation
+Shelter Primary School,West Bengal,South 24 Parganas,22.1168,88.4167,662,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,South 24 Parganas,22.1168,88.4167,204,School,Synthetic Generation
+Shelter Primary School,West Bengal,South 24 Parganas,22.2209,88.1436,964,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,South 24 Parganas,22.3002,88.1071,68,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,West Midnapore,22.4143,87.267,177,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,West Midnapore,22.4143,87.267,957,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,West Midnapore,22.4143,87.267,422,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,West Midnapore,22.4143,87.267,72,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,East Midnapore,22.0208,87.7744,705,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,East Midnapore,22.0208,87.7744,155,Community Hall,Synthetic Generation
+Shelter Primary School,West Bengal,Alipurduar,26.7042,89.1455,449,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Alipurduar,26.5148,89.6522,393,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,West Bengal,Paschim Bardhaman,23.9614,87.1708,631,Government Building,Synthetic Generation
+Shelter Primary School,West Bengal,South Dinajpur,24.7066,87.8967,969,Community Hall,Synthetic Generation
+Shelter Primary School,Sikkim,East Sikkim,27.2385,88.4887,210,Government Building,Synthetic Generation
+Shelter Primary School,Arunachal Pradesh,East Siang,28.1238,95.1634,700,Community Hall,Synthetic Generation
+Shelter Primary School,Goa,North Goa,15.6152,73.7674,299,Government Building,Synthetic Generation
+Shelter Primary School,Goa,South Goa,15.399,73.8257,843,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,West Champaran,26.7621,84.4861,982,School,Synthetic Generation
+Shelter Primary School,Bihar,West Champaran,26.7621,84.4861,995,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Sitamarhi,26.576,85.5397,622,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Sitamarhi,26.576,85.5397,538,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Madhubani,26.4057,86.2179,966,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Madhubani,26.3874,86.2027,112,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Supaul,26.2477,86.8001,86,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Kishanganj,26.2617,87.8244,101,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Kishanganj,26.2956,87.9353,52,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Purnia,25.8814,87.5257,767,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Katihar,25.6133,87.3436,109,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Madhepura,25.9467,86.9759,479,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Saharsa,25.7169,86.438,508,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Saharsa,25.9194,86.4649,992,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Saharsa,25.8593,86.5499,923,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Saharsa,25.8166,86.5898,662,School,Synthetic Generation
+Shelter Primary School,Bihar,Darbhanga,26.1138,86.0253,800,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Darbhanga,25.9068,86.2956,630,School,Synthetic Generation
+Shelter Primary School,Bihar,Gopalganj,26.4427,84.3773,307,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Siwan,26.147,84.5588,176,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Siwan,26.225,84.6152,443,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Saran,25.9047,84.8253,948,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Saran,25.864,85.1041,177,School,Synthetic Generation
+Shelter Primary School,Bihar,Vaishali,25.7623,85.37,149,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Vaishali,25.7521,85.1931,314,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Samastipur,25.8451,85.9162,538,School,Synthetic Generation
+Shelter Primary School,Bihar,Samastipur,25.6941,86.0074,734,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Begusarai,25.4953,86.1308,220,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Bhagalpur,25.2965,86.8584,276,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Bhagalpur,25.3307,87.1928,222,School,Synthetic Generation
+Shelter Primary School,Bihar,Bhagalpur,25.2705,87.0844,564,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Banka,24.766,86.5038,295,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Banka,25.0269,87.0588,256,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Banka,24.8537,86.8409,773,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Banka,24.8537,86.8409,298,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Nalanda,25.2773,85.5858,883,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Nalanda,25.2048,85.4869,290,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Patna,25.579,85.0456,270,Government Building,Synthetic Generation
+Shelter Primary School,Bihar,Patna,25.4564,85.2222,227,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Patna,25.4351,85.0447,808,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Bhojpur,25.4512,84.629,595,School,Synthetic Generation
+Shelter Primary School,Bihar,Rohtas,25.0921,84.3504,925,Community Hall,Synthetic Generation
+Shelter Primary School,Bihar,Nawada,24.979,85.4614,865,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Bihar,Nawada,24.811,85.5941,370,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Gwalior,26.2798,78.1735,522,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Gwalior,26.0221,78.148,982,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Chhatarpur,24.8436,79.3593,262,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Chhatarpur,24.7967,79.6661,595,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Panna,24.4205,80.1917,998,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Panna,24.4205,80.1917,754,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Sagar,23.6589,78.7177,185,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Satna,24.4195,80.7799,888,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Rewa,24.4892,81.3438,633,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Rewa,24.7707,81.6333,486,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Rewa,24.6866,81.9442,514,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Umaria,23.5644,80.9719,938,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Mandsaur,24.2113,75.4055,345,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Ratlam,23.501,75.0901,156,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Ratlam,23.501,75.0901,426,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Shajapur,23.5797,76.3458,425,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Dewas,22.7451,76.4564,740,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Dewas,22.6894,76.898,643,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Dhar,22.1122,74.5879,908,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Indore,22.6259,75.9278,692,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Indore,22.6259,75.9278,183,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Rajgarh,23.5964,76.5748,502,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Rajgarh,23.6716,76.6645,736,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Vidisha,24.161,77.9551,434,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Vidisha,24.0104,77.3473,674,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Raisen,23.217,78.1184,302,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Betul,21.878,77.871,341,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Hoshangabad,22.7657,78.0018,161,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Katni,23.7542,80.4015,847,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Katni,23.8167,80.3029,153,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Jabalpur,23.1176,79.9246,915,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Narsinghpur,23.0195,79.3358,701,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Narsinghpur,22.9993,78.8139,58,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Narsinghpur,23.1708,78.8724,175,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Dindori,23.1713,80.7267,105,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Chhindwara,21.9232,78.8438,319,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Seoni,21.9854,79.7263,625,School,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Anuppur,22.975,81.327,722,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Sidhi,24.5617,82.0364,815,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Sidhi,24.3059,81.3222,768,Government Building,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Jhabua,22.6393,74.6082,549,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Jhabua,22.9457,74.4278,433,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,East Nimar,21.9744,76.3803,655,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,Burhanpur,21.3363,76.3143,725,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,West Nimar,22.6012,74.2471,368,Community Hall,Synthetic Generation
+Shelter Primary School,Madhya Pradesh,West Nimar,22.166,76.0578,767,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Saharanpur,29.6392,77.7228,448,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Muzaffarnagar,29.226,77.4684,975,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Muzaffarnagar,29.3245,77.6731,572,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bijnor,29.4534,78.1851,461,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bijnor,29.6252,78.2323,668,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bijnor,29.1618,78.3754,983,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Moradabad,28.8846,78.8316,150,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Moradabad,28.9019,78.6834,849,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Moradabad,28.5262,78.7475,227,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Rampur,28.5212,78.9986,349,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Meerut,28.9605,77.7279,713,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ghaziabad,28.7643,77.4856,146,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ghaziabad,28.8102,77.601,111,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Gautam Buddha Nagar,28.4014,77.535,325,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bulandshahr,28.3359,78.0406,56,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bulandshahr,28.2127,78.1713,939,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bulandshahr,28.5247,78.1402,456,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Aligarh,27.9169,78.0637,651,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Aligarh,27.9169,78.0637,929,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Aligarh,28.0523,78.0147,763,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Aligarh,27.942,77.8424,947,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Aligarh,27.8309,78.2201,637,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Agra,26.882,78.5069,252,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Firozabad,27.1813,78.5405,894,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Firozabad,27.1236,78.4833,580,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Firozabad,27.27,78.4667,318,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Mainpuri,27.2931,79.2013,103,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Budaun,28.0587,79.0104,521,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Budaun,28.0801,79.0399,373,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Bareilly,28.3011,79.3982,419,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pilibhit,28.45,80.0833,538,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pilibhit,28.5348,79.9752,474,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pilibhit,28.5348,79.9752,857,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Shahjahanpur,27.9599,79.829,642,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Shahjahanpur,27.9599,79.829,136,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Shahjahanpur,27.8247,79.9169,751,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Kheri,28.1221,80.6672,293,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Sitapur,27.3863,81.168,481,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Sitapur,27.3929,81.1155,241,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Sitapur,27.4349,80.6137,828,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Hardoi,27.2599,80.243,554,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Hardoi,27.329,80.1629,546,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Hardoi,27.329,80.1629,687,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Unnao,26.6094,80.5596,459,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Unnao,26.5853,80.9033,474,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Unnao,26.6094,80.5596,934,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Lucknow,26.8807,81.0444,439,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Lucknow,26.6146,81.1014,952,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Raebareli,26.3463,81.4074,491,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Raebareli,26.0722,81.5491,590,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Farrukhabad,27.3299,79.4743,476,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Farrukhabad,27.4879,79.5085,380,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Kannauj,27.0552,79.9188,774,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Kanpur Nagar,26.3891,80.2124,176,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Jalaun,26.116,79.2901,199,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Jalaun,26.167,79.3516,840,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Mahoba,25.4591,80.0168,214,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Banda,25.4559,80.3001,309,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Banda,25.3535,80.5653,874,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pratapgarh,25.7281,81.4426,939,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pratapgarh,25.8587,81.9485,734,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Pratapgarh,26.0188,81.7458,422,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Allahabad,25.2974,81.7401,697,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Allahabad,25.3031,81.9614,914,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Allahabad,25.3028,81.8946,189,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Allahabad,25.2589,82.0128,82,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Barabanki,26.9358,81.0938,383,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Barabanki,26.8425,81.2913,575,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Barabanki,27.0636,81.0746,564,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Barabanki,26.9377,81.3341,593,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Faizabad,26.6172,82.2107,684,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ambedkar Nagar,26.4016,82.284,494,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ambedkar Nagar,26.6415,82.4855,579,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ambedkar Nagar,26.4201,82.6708,613,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Ambedkar Nagar,26.4201,82.6708,514,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Balrampur,27.4906,82.3745,931,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Gonda,27.0842,82.0256,240,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Gonda,26.8804,82.13,578,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Gonda,27.1718,82.0632,453,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Siddharthnagar,27.131,82.6432,528,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Basti,26.7927,82.7679,918,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Basti,26.6618,82.8122,878,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Basti,26.6618,82.8122,553,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Maharajganj,27.2035,83.5328,50,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Gorakhpur,26.9587,83.3069,376,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Kushinagar,26.8618,83.9348,179,Community Hall,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Kushinagar,26.8618,83.9348,560,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Deoria,26.4227,83.8366,428,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Azamgarh,26.0462,83.0798,326,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Azamgarh,26.0462,83.0798,432,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Azamgarh,25.7837,82.9264,310,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Azamgarh,26.0462,83.0798,59,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Jaunpur,25.7656,82.5918,202,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Jaunpur,25.7112,82.7037,764,School,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Jaunpur,25.6436,82.5944,181,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Varanasi,25.3887,82.9177,395,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Mirzapur,25.0112,82.7534,217,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Sant Ravidas Nagar,25.5127,81.7405,511,Government Building,Synthetic Generation
+Shelter Primary School,Uttar Pradesh,Sant Ravidas Nagar,25.5023,82.3755,415,Community Hall,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Koriya,23.4674,82.2383,662,School,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Surguja,23.0371,83.088,111,Government Building,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Surguja,22.9405,83.1235,906,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Raigarh,21.7169,83.2838,368,Government Building,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Raigarh,22.0859,83.3082,202,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Raigarh,22.0859,83.3082,673,School,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Korba,22.319,82.2913,889,Community Hall,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Korba,22.3513,82.1829,815,School,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Bilaspur(CGH),22.6328,81.7852,284,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Durg,21.2134,81.3854,756,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Durg,21.2134,81.3854,892,Community Hall,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Raipur,21.2845,81.8203,625,School,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Mahasamund,21.2533,82.779,944,Government Building,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Kanker,20.1372,81.1209,78,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Bastar,19.1065,81.876,768,Community Hall,Synthetic Generation
+Shelter Primary School,Chhattisgarh,Bastar,19.1065,81.876,389,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,Koderma,24.1522,85.5704,283,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,Giridh,24.3639,85.9007,801,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Jharkhand,Dhanbad,23.8293,86.4719,512,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Jharkhand,East Singhbhum,22.5826,86.4527,977,School,Synthetic Generation
+Shelter Primary School,Jharkhand,Latehar,23.8069,84.5858,664,Government Building,Synthetic Generation
+Shelter Primary School,Jharkhand,Latehar,23.7178,84.4432,1000,Government Building,Synthetic Generation
+Shelter Primary School,Jharkhand,Jamtara,23.9769,86.9172,110,Government Building,Synthetic Generation
+Shelter Primary School,Jharkhand,Ranchi,23.202,85.6027,477,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,Ranchi,23.3249,85.7457,242,Government Building,Synthetic Generation
+Shelter Primary School,Jharkhand,Ranchi,23.1025,84.9461,131,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,Ranchi,23.3313,85.3708,318,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,Gumla,23.2373,84.8242,409,Community Hall,Synthetic Generation
+Shelter Primary School,Jharkhand,West Singhbhum,22.4147,85.1844,67,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Chamoli,30.4953,79.5787,441,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttarakhand,Tehri Garhwal,30.3226,78.6089,327,Community Hall,Synthetic Generation
+Shelter Primary School,Uttarakhand,Tehri Garhwal,30.4374,78.537,77,Government Building,Synthetic Generation
+Shelter Primary School,Uttarakhand,Dehradun,30.2937,78.0035,241,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttarakhand,Dehradun,30.8621,77.8182,520,Government Building,Synthetic Generation
+Shelter Primary School,Uttarakhand,Pauri Garhwal,29.9294,79.0546,734,Government Building,Synthetic Generation
+Shelter Primary School,Uttarakhand,Pauri Garhwal,29.7173,78.5946,230,Government Building,Synthetic Generation
+Shelter Primary School,Uttarakhand,Pithoragarh,30.1119,80.3477,664,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Uttarakhand,Pithoragarh,29.9486,80.1352,72,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Bageshwar,29.9911,79.8596,404,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Almora,29.7109,79.6731,234,Community Hall,Synthetic Generation
+Shelter Primary School,Uttarakhand,Almora,29.7374,79.5732,297,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Almora,29.6565,79.3934,591,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Champawat,29.3708,79.9264,602,School,Synthetic Generation
+Shelter Primary School,Uttarakhand,Champawat,29.2988,80.0697,600,Community Hall,Synthetic Generation
+Shelter Primary School,Uttarakhand,Nainital,29.3127,79.4547,202,Community Hall,Synthetic Generation
+Shelter Primary School,Uttarakhand,Haridwar,29.6573,78.073,181,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Adilabad,19.4128,78.3051,925,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Nizamabad,18.696,78.2131,710,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,Karim Nagar,18.3624,79.1723,632,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,Karim Nagar,18.376,79.2449,748,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,Medak,17.9554,78.2569,859,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Medak,17.9554,78.2569,993,School,Synthetic Generation
+Shelter Primary School,Telangana,Medak,17.9793,78.4183,579,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,Hyderabad,17.4171,78.4772,654,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,K.V.Rangareddy,17.299,78.4186,744,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,K.V.Rangareddy,17.1316,78.4112,679,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Nalgonda,16.876,79.2009,885,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Warangal,17.9218,79.7582,770,Community Hall,Synthetic Generation
+Shelter Primary School,Telangana,Warangal,18.1967,79.664,931,Cyclone Shelter,Synthetic Generation
+Shelter Primary School,Telangana,Warangal,17.9218,79.7582,334,Government Building,Synthetic Generation
+Shelter Primary School,Telangana,Khammam,17.1257,80.2081,319,School,Synthetic Generation
+Shelter Primary School,Telangana,Khammam,17.1891,80.581,697,School,Synthetic Generation

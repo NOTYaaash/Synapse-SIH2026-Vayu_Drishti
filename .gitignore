@@ -1,46 +1,58 @@
-# Frontend & Dependencies (Prevents esbuild locking issues)
-node_modules/
-frontend/node_modules/
-backend/node_modules/
-dist/
-build/
-.next/
+# ------------------------------------------------------------------------------
+# SIH 2026 Cyclone Tracking (.gitignore)
+# ------------------------------------------------------------------------------
 
-# Python Environment
+# Python & Django Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtual Environments & Secrets
 venv/
 .venv/
 env/
-__pycache__/
-*.py[cod]
+.env
 
-# Massive Datasets & Raw Satellite Data (Do not upload)
+# Frontend / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.npm/
+
+# Local Databases
+db.sqlite3
+
+# Heavy Datasets & Satellite Data
+data/Order/
 data/gpm_imerg/
-data/training_tensors/
-data/wind_cache/
-data/ibtracs*.csv
-data/subset_GPM*.txt
-*.nc
+data/ibtracs.ALL.list.v04r01.csv
 *.h5
 *.hdf5
-*.pkl
-*.npz
-*.npy
-*.parquet
+*.nc
+*.nc4
 *.zip
-*.tar.gz
-*.mp4
 
-# Environment & Secrets
-.env
-.env.local
-*.env
+# PyTorch Model Weights
+*.pt
+*.pth
+*.onnx
 
-# System & Editor Junk
+# Local System / IDE / Logs
 .vscode/
 .idea/
-Thumbs.db
-.DS_Store
+*.log
+*.txt
+*.mp4
+*.json
 
+# Local Archives (Not tracked by Git)
+_archive/
 
-
-data/IN.txt
+# ------------------------------------------------------------------------------
+# FORCE TRACK SIH MANDATORY FOLDERS
+# ------------------------------------------------------------------------------
+!docs/
+!submission/
+!assets/
+!assets/screenshots/

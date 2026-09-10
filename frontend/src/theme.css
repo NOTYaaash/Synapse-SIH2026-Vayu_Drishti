@@ -1,0 +1,189 @@
+/* ────────────  VAYU DRISHTI · GLASSMORPHISM THEME  ──────────── */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+/* ── Design Tokens ── */
+:root{
+  /* Typography */
+  --head: 'Outfit', 'Archivo', Helvetica, Arial, sans-serif;
+  --body: 'Inter', 'Public Sans', Helvetica, Arial, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+
+  /* Accent */
+  --accent: #3EC6FF;
+  --accent-glow: rgba(62, 198, 255, .25);
+  --accent-hover: #62d4ff;
+
+  /* Placeholders & Misc (kept from original) */
+  --ph: #1b202b; --ph-2: #242b39;
+  --code-bg: #12141a; --code-ink: #dfe3ea;
+  --tint: #17223c;
+
+  /* Glass tokens (overridden per mode) */
+  --glass-bg: rgba(255,255,255,.06);
+  --glass-border: rgba(255,255,255,.10);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,.25);
+  --glass-blur: 20px;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --ease: cubic-bezier(.4,0,.2,1);
+  --speed: .22s;
+}
+
+/* ── DARK MODE (default) ── */
+body.dark{
+  --bg:  #0b1120;
+  --bg2: #111827;
+  --surface: rgba(17,24,39,.65);
+  --ink:  #e2e8f0;
+  --muted: #94a3b8;
+  --muted-2: rgba(233,234,236,.46);
+  --line: rgba(255,255,255,.07);
+  --line-2: rgba(255,255,255,.04);
+  --tint: #17223c;
+  --accent: #3EC6FF;
+  --code-bg: #0a0d13; --code-ink: #cfd6e2;
+  --ph: #1b202b; --ph-2: #242b39;
+
+  /* Glass */
+  --glass-bg: rgba(15,23,42,.55);
+  --glass-border: rgba(148,163,184,.12);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,.35);
+
+  /* Risk palette */
+  --r-low: #22c55e;  --r-mod: #facc15;
+  --r-high: #f97316; --r-sev: #ef4444;
+
+  color-scheme: dark;
+  background: linear-gradient(145deg, #0b1120 0%, #0f172a 40%, #1a1040 100%);
+}
+
+/* ── LIGHT MODE ── */
+body:not(.dark){
+  --bg:  #f4f2ee;
+  --bg2: #e2e8f0;
+  --surface: rgba(255,255,255,.7);
+  --ink:  #16181c;
+  --muted: rgba(22,24,28,.58);
+  --muted-2: rgba(22,24,28,.45);
+  --line: rgba(0,0,0,.08);
+  --line-2: rgba(0,0,0,.04);
+  --tint: #eef3fc;
+  --accent: #1F5FD0;
+  --code-bg: #12141a; --code-ink: #dfe3ea;
+  --ph: #e8e6e1; --ph-2: #dcd9d3;
+
+  /* Glass */
+  --glass-bg: rgba(255,255,255,.45);
+  --glass-border: rgba(0,0,0,.08);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,.08);
+
+  /* Risk palette */
+  --r-low: #16a34a;  --r-mod: #F2C230;
+  --r-high: #E4761B; --r-sev: #C62828;
+
+  color-scheme: light;
+  background: linear-gradient(145deg, #f4f2ee 0%, #e8e6e1 40%, #dbeafe 100%);
+}
+
+/* ── Base Reset ── */
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;transition:background var(--speed) var(--ease), color var(--speed) var(--ease)}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.01em}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--ink)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{font-family:var(--head);cursor:pointer}
+a,button{transition:background .18s ease,color .18s ease,border-color .18s ease,filter .18s ease}
+img,svg{display:block;max-width:100%}
+
+/* ── Animations ── */
+@keyframes riseIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.card{animation:none}}
+
+/* ── Glass Card ── */
+.card{
+  animation: riseIn .55s cubic-bezier(.22,.7,.2,1) both;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-shadow);
+  overflow: hidden;
+  transition: transform var(--speed) var(--ease), box-shadow var(--speed) var(--ease);
+}
+.card:nth-of-type(2){animation-delay:.06s}
+.card:nth-of-type(3){animation-delay:.12s}
+.card:nth-of-type(4){animation-delay:.18s}
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.3);
+}
+h1,h2,header{animation:none}
+
+/* ── Glass Panel (no hover lift) ── */
+.glass-panel{
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-shadow);
+}
+
+/* ── Typography Utilities (from original) ── */
+.eyebrow{font:600 9.5px/1.3 var(--head);letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.label{font:600 10px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.figure{font:600 34px/1 var(--head);letter-spacing:-.02em}
+.unit{font-size:14px;color:var(--muted);margin-left:4px}
+
+/* ── Layout Utilities (from original) ── */
+.grid1{display:grid;gap:1px;background:var(--line)}
+.page{max-width:1280px;margin:0 auto;padding:clamp(26px,3.4vw,44px) clamp(18px,3vw,36px) 96px;display:flex;flex-direction:column;gap:clamp(22px,2.4vw,32px)}
+
+/* ── Buttons ── */
+.btn{
+  display: inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding: 10px 20px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  color: var(--ink);
+  font: 600 13px/1 var(--body);
+  cursor: pointer;
+  transition: all var(--speed) var(--ease);
+}
+.btn:hover{ background: rgba(255,255,255,.12); transform: translateY(-1px); }
+.btn-accent{
+  background: var(--accent);
+  border-color: transparent;
+  color: #0b1120;
+}
+.btn-accent:hover{ background: var(--accent-hover); box-shadow: 0 0 20px var(--accent-glow); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--glass-border);border-radius:var(--radius-full)}
+::-webkit-scrollbar-thumb:hover{background:var(--muted)}
+
+/* ── Range Slider ── */
+input[type=range]{-webkit-appearance:none;appearance:none;background:none;cursor:pointer;height:20px}
+input[type=range]::-webkit-slider-runnable-track{height:2px;border-radius:1px;background:rgba(255,255,255,.18)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--accent);border:none;margin-top:-5px;box-shadow:0 0 6px var(--accent-glow)}
+input[type=range]::-moz-range-track{height:2px;border-radius:1px;background:rgba(255,255,255,.18);border:none}
+input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--accent);border:none;box-shadow:0 0 6px var(--accent-glow)}
+input[type=range]::-moz-range-progress{height:2px;border-radius:1px;background:var(--accent)}
+body:not(.dark) input[type=range]::-webkit-slider-runnable-track{background:rgba(0,0,0,.12)}
+body:not(.dark) input[type=range]::-moz-range-track{background:rgba(0,0,0,.12)}

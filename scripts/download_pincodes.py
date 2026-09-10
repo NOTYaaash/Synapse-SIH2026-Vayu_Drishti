@@ -1,4 +1,3 @@
-import os
 import zipfile
 import urllib.request
 from pathlib import Path

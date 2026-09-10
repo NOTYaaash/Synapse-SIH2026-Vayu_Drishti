@@ -6,7 +6,6 @@ import torch
 from torch.utils.data import Dataset
 from typing import List, Tuple, Dict
 from datetime import datetime, timedelta
-from pathlib import Path
 from collections import defaultdict
 
 from ml_engine.training.global_dataset import _build_gpm_index, _latlon_to_pixel, _crop_patch

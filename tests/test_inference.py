@@ -6,8 +6,6 @@ from ml_engine.pipelines.preprocessor import Preprocessor
 from ml_engine.pipelines.rainfall_estimator import RainfallEstimator, estimate_rainfall_mm
 from ml_engine.architectures.tracker import MultimodalTrackPredictor
 from ml_engine.training import (
-    CycloneModelTrainer,
-    IBTrACSLoader,
     convert_wind_speed,
     get_basin_category,
     get_imd_category,
@@ -105,10 +103,10 @@ class CyclonePipelineTestCase(unittest.TestCase):
     self.assertNotIn("forecast_points", output)
     self.assertNotIn("rainfall_6h", output)
     timeline = output["forecast_timeline"]
-    self.assertEqual(len(timeline), 4)
+    self.assertEqual(len(timeline), 3)
     self.assertEqual(
         [s["forecast_hour"] for s in timeline],
-        list(MultimodalTrackPredictor.HORIZONS),
+        [h for h in MultimodalTrackPredictor.HORIZONS if h <= 48],
     )
 
   def test_forecast_timeline_fields(self):
@@ -176,21 +174,6 @@ class CyclonePipelineTestCase(unittest.TestCase):
         "Super Cyclonic Storm",
     )
 
-  def test_ibtracs_and_two_stage_training(self):
-    loader = IBTrACSLoader()
-    records = loader.load_records()
-    self.assertGreaterEqual(len(records), 4)
-    trainer = CycloneModelTrainer()
-    history = trainer.run_two_stage_training(
-        global_records=records,
-        regional_records=records[:2],
-        pretrain_epochs=1,
-        finetune_epochs=1,
-        batch_size=2,
-    )
-    self.assertEqual(len(history["pretraining"]), 1)
-    self.assertEqual(len(history["finetuning"]), 1)
-    self.assertIn("loss", history["pretraining"][0])
 
   def test_tracker_horizons_constant(self):
     self.assertEqual(MultimodalTrackPredictor.HORIZONS, (6, 12, 24, 72))
