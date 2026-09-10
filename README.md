@@ -29,7 +29,9 @@ The current standard for cyclone tracking relies on heavily generalized forecast
 - **Geospatial & Data**: GDAL, h5py, NetCDF4, ISRO MOSDAC, NOAA GFS
 
 ## 6. Architecture
-docs/architecture.md
+
+See [docs/architecture.md](docs/architecture.md) for full details.
+
 ```text
 [ Live Satellite Data ] --> ( MOSDAC API / Local HDF5 Archives )
                                       |
@@ -55,7 +57,6 @@ docs/architecture.md
 [ Vayu Drishti Frontend ] (React + Leaflet)
    - Renders live weather map, wind particles
    - Displays shelter table and district rainfall projections
-```
 
 ## 7. Repository Structure
 - **`apps/`**: Django REST API applications (`predictions`, `cyclones`, etc.) serving model inference and data.
