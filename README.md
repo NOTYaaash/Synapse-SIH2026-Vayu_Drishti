@@ -31,6 +31,7 @@ The current standard for cyclone tracking relies on heavily generalized forecast
 ## 6. Architecture
 
 See [docs/architecture.md](docs/architecture.md) for full details.
+Refer to [docs/mosdac_guide.md](docs/mosdac_guide.md) for information regarding the setup of MOSDAC client.
 
 ```text
 [ Live Satellite Data ] --> ( MOSDAC API / Local HDF5 Archives )
