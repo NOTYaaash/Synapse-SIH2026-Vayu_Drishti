@@ -1,6 +1,7 @@
 from celery import shared_task
 from django.contrib.gis.geos import Point
 from ml_engine.pipelines.predictor import CyclonePipeline
+from ml_engine.utils.standing_data_loader import refresh_standing_data_cache
 from apps.cyclones.models import StormEvent, SatelliteObservation
 from .models import ForecastTrack, RainfallForecast
 
@@ -54,3 +55,26 @@ def run_live_pipeline(basin: str = "BOB"):
     )
 
   return result
+
+
+@shared_task
+def sync_standing_data(api_url: str | None = None):
+  """
+  Refresh the in-process standing data cache on all Celery workers.
+
+  Scheduled by Celery Beat every 6 hours (configured in config/celery.py).
+  Can also be triggered on-demand:
+      from apps.predictions.tasks import sync_standing_data
+      sync_standing_data.delay()
+
+  Args:
+      api_url: Optional MOSDAC / external API endpoint to pull fresh
+               station metadata from. If None, reloads from the local
+               cyclone_shelters.csv on disk.
+
+  Returns:
+      Summary dict: {"status": "ok"|"error", "rows_loaded": int, "source": str}
+  """
+  result = refresh_standing_data_cache(api_url=api_url)
+  return result
+
