@@ -31,7 +31,6 @@ The current standard for cyclone tracking relies on heavily generalized forecast
 ## 6. Architecture
 
 See [docs/architecture.md](docs/architecture.md) for full details.
-Refer to [docs/mosdac_guide.md](docs/mosdac_guide.md) for information regarding the setup of MOSDAC client.
 
 ```text
 [ Live Satellite Data ] --> ( MOSDAC API / Local HDF5 Archives )
@@ -93,7 +92,9 @@ Please see the `assets/screenshots/` directory for visual demonstrations of the 
    cd frontend
    npm install
    ```
-### Setting up the IBTrACS Dataset
+### Setting up the Dataset
+
+Refer to [docs/mosdac_guide.md](docs/mosdac_guide.md) for information regarding the setup of MOSDAC client.
 
 The global cyclone dataset (IBTrACS) is critical for our ML pipeline (specifically the IntensityClassifier) and historical data analysis. Due to GitHub's 100 MB file size limit, this dataset is excluded from version control and must be downloaded manually.
 
