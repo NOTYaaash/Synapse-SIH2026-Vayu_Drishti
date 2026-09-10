@@ -57,6 +57,7 @@ See [docs/architecture.md](docs/architecture.md) for full details.
 [ Vayu Drishti Frontend ] (React + Leaflet)
    - Renders live weather map, wind particles
    - Displays shelter table and district rainfall projections
+```
 
 ## 7. Repository Structure
 - **`apps/`**: Django REST API applications (`predictions`, `cyclones`, etc.) serving model inference and data.
@@ -92,7 +93,8 @@ Please see the `assets/screenshots/` directory for visual demonstrations of the 
    cd frontend
    npm install
    ```
-### Setting up the Dataset
+
+### Setting up Datasets
 
 Refer to [docs/mosdac_guide.md](docs/mosdac_guide.md) for information regarding the setup of MOSDAC client.
 
@@ -134,4 +136,4 @@ This project requires running the Django backend and Vite frontend simultaneousl
 ## 13. Future Scope
 - **Extended Integration**: Add live flood-inundation mapping by linking rainfall grids with local topological DEM data.
 - **Multilingual Support**: Implement localized translations for advisory texts so rural communities receive warnings in native regional languages.
-- **Edge Deployment**: Optimize the PyTorch ONNX models to run efficiently on low-power edge nodes deployed in coastal regions
+- **Edge Deployment**: Optimize the PyTorch ONNX models to run efficiently on low-power edge nodes deployed in coastal regions.
