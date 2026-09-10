@@ -29,6 +29,7 @@ The current standard for cyclone tracking relies on heavily generalized forecast
 - **Geospatial & Data**: GDAL, h5py, NetCDF4, ISRO MOSDAC, NOAA GFS
 
 ## 6. Architecture
+docs/architecture.md
 ```text
 [ Live Satellite Data ] --> ( MOSDAC API / Local HDF5 Archives )
                                       |
