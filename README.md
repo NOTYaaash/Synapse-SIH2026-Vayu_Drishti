@@ -110,4 +110,4 @@ This project requires running the Django backend and Vite frontend simultaneousl
 ## 13. Future Scope
 - **Extended Integration**: Add live flood-inundation mapping by linking rainfall grids with local topological DEM data.
 - **Multilingual Support**: Implement localized translations for advisory texts so rural communities receive warnings in native regional languages.
-- **Edge Deployment**: Optimize the PyTorch ONNX models to run efficiently on low-power edge nodes deployed in coastal regions.
+- **Edge Deployment**: Optimize the PyTorch ONNX models to run efficiently on low-power edge nodes deployed in coastal regions
