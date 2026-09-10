@@ -93,6 +93,26 @@ Please see the `assets/screenshots/` directory for visual demonstrations of the 
    cd frontend
    npm install
    ```
+### Setting up the IBTrACS Dataset
+
+The global cyclone dataset (IBTrACS) is critical for our ML pipeline (specifically the IntensityClassifier) and historical data analysis. Due to GitHub's 100 MB file size limit, this dataset is excluded from version control and must be downloaded manually.
+
+Please download the **CSV** format for version **v04r01** directly from the official NOAA NCEI IBTrACS archive.
+
+The downloaded file must be placed exactly at this path so the backend scripts can find it:
+
+```text
+Vayu_Drishti/
+├── data/
+│   └── ibtracs.ALL.list.v04r01.csv
+```
+
+**Quick Download Command:**
+You can use the following command in your terminal to fetch the file directly into your `data/` folder:
+
+```bash
+curl -o data/ibtracs.ALL.list.v04r01.csv https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.ALL.list.v04r01.csv
+```
 
 ## 12. Run
 This project requires running the Django backend and Vite frontend simultaneously.
