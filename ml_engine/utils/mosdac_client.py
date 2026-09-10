@@ -6,6 +6,8 @@ import h5py
 import numpy as np
 import requests
 
+from ml_engine.utils.netcdf_reader import MOSDACNetCDFReader
+
 logger = logging.getLogger(__name__)
 
 # ── Canonical INSAT-3DS grid for the ASIA_MER sector ─────────────────────────
@@ -109,6 +111,10 @@ class MOSDACClient:
         else:
             self._file_index = 0
 
+        # Lazy-initialised NetCDF readers per variable type.
+        # Instantiated on first call to fetch_derived_product_nc().
+        self._nc_readers: dict[str, MOSDACNetCDFReader] = {}
+
     def fetch_latest_tir1_array(self, lat: float = 14.5, lon: float = 86.2) -> tuple[np.ndarray | None, str]:
         # ── 1. Try live MOSDAC API ────────────────────────────────────────────
         try:
@@ -176,3 +182,41 @@ class MOSDACClient:
 
         logger.error("No valid satellite data available. Returning None.")
         return None, "unknown"
+
+    def fetch_derived_product_nc(
+        self,
+        variable: str = "rainfall",
+        lat: float = 14.5,
+        lon: float = 86.2,
+        data_dir: str | None = None,
+    ) -> tuple[np.ndarray | None, str]:
+        """
+        Fetch a MOSDAC-distributed NetCDF derived product (e.g. rainfall, SST)
+        as a normalised (512, 512) float32 ndarray.
+
+        Args:
+            variable:  One of 'rainfall', 'precip', 'sst'. Maps to the
+                       correct NetCDF variable name and normalisation bounds.
+            lat, lon:  Centre coordinates for the 512×512 crop.
+            data_dir:  Override the default NetCDF search directory.
+                       Defaults to data/gpm_imerg for rainfall/precip,
+                       and data/sst for sst products.
+
+        Returns:
+            (patch_array, "netcdf_derived") on success, (None, "unknown") on failure.
+        """
+        # Resolve default data directory per variable
+        if data_dir is None:
+            if variable in ("rainfall", "precip"):
+                data_dir = os.path.join(_ROOT, "data", "gpm_imerg")
+            else:
+                data_dir = os.path.join(_ROOT, "data", variable)
+
+        # Instantiate reader once per (variable, data_dir) combination
+        cache_key = f"{variable}::{data_dir}"
+        if cache_key not in self._nc_readers:
+            self._nc_readers[cache_key] = MOSDACNetCDFReader(
+                data_dir=data_dir, variable=variable
+            )
+
+        return self._nc_readers[cache_key].fetch_patch(lat=lat, lon=lon)
